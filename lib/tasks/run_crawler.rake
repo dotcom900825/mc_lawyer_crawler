@@ -1,4 +1,4 @@
-task :crawl => :environment do
+task :run_crawler => :environment do
   state = 'california'
   agent = Mechanize.new { |agent|
     agent.user_agent_alias = 'Mac Safari'
